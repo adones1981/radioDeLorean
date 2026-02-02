@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Delorean - En Vivo</title>
+    <style>
+        body { background: #1a1a1a; color: #00ffcc; font-family: 'Courier New', monospace; text-align: center; padding-top: 50px; }
+        .radio-container { border: 2px solid #00ffcc; display: inline-block; padding: 30px; border-radius: 20px; box-shadow: 0 0 20px #00ffcc; }
+        .dial { font-size: 3rem; margin: 20px 0; }
+        audio { filter: invert(100%); width: 300px; }
+    </style>
+</head>
+<body>
+    <div class="radio-container">
+        <h1>RADIO DELOREAN</h1>
+        <div class="dial">98.1 MHz</div>
+        <p>SINTONIZANDO SEÑAL ONLINE...</p>
+        <audio controls autoplay>
+            <source src="{{ stream_url }}" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
